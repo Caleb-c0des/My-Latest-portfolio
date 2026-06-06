@@ -1,0 +1,117 @@
+@media(min-width:1900px) {
+    .project,.stat {
+        padding: 300px;
+    }
+    nav {
+        padding-left:300px;
+        padding-right:300px;
+    }
+    .stat-box {
+        width:30rem;
+    }
+}
+@media (max-width:1000px) {
+    .project-containers {
+        grid-template-columns: repeat(2,1fr);
+    }
+    body {
+        width: 100vw;
+    }
+    .hero {
+        width: 100vw;
+    }
+    .name {
+        font-size: 120px;
+    }
+    .project-container {
+        width: 450px;
+    }
+}
+@media (max-width:950px) {
+    .project-containers {
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    body {
+        width: 100vw;
+    }
+    .hero {
+        width: 100vw;
+    }
+    .name {
+        font-size: 120px;
+    }
+    .project-container {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stat-boxes {
+        display:flex;
+        gap:30px;
+        cursor: none;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .stat-box {
+        width:30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:700px) {
+    .project-containers {
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        padding:0
+    }
+    body {
+        width: 100vw;
+    }
+    .project {
+        padding:1;
+    }
+    .hero {
+        width: 100vw;
+    }
+    .name {
+        font-size: 90px;
+    }
+    .project-container {
+        width: 100px;
+        
+    }
+    .project-container span {
+         padding:5px;
+    }
+    nav button {
+        display:none;
+    }
+    nav svg {
+        display:none;
+    }
+    .project-container {
+        width: fit-content;
+    }
+    body {
+        width:fit-content;
+        padding:0;
+    }
+    .project-container {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stat-boxes {
+        display:flex;
+        gap:30px;
+        cursor: none;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .stat-box {
+        width:25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
