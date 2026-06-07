@@ -264,7 +264,7 @@ nav button:hover {
 .social1 {
     display: flex;
     align-items: center;
-    gap:4px;
+   
 }
 .social1:hover svg {
     fill:#3B82F6;
@@ -287,6 +287,7 @@ nav button:hover {
     justify-content: center;
     gap:30px;
     margin-top: 30px;
+    
 }
 .cta1 {
     display:flex;
@@ -300,7 +301,7 @@ nav button:hover {
     transition: 0.4s;
     font-weight: 700;
     background-color: var(--button);
-    color:white
+    color:white;
 }
 .cta1:hover, .cta2:hover {
     box-shadow: 0 0 20px #3B82F6;
@@ -362,6 +363,28 @@ nav button:hover {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+.intro-flex h1,.intro h1,.intro p,.head-intro {
+    animation: slide 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 48%;
+}
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-100%) scale(0.5);
+    }
+}
+.intro-flex a {
+    animation: right 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 48%;
+}
+@keyframes right {
+    from {
+        opacity: 0;
+        transform: translateX(100%) scale(0.5);
+    }
+}
 .project-intro {
     display: flex;
     align-items: center;
@@ -402,6 +425,20 @@ nav button:hover {
     background-color:hsl(228 18% 10%);
     transition: 0.4s;
     cursor: none;
+    animation: slide 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 48%;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.5);
+    }
+}
+.project-container-right {
+    animation: right 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 48%;
 }
 .projects {
     cursor: none;
@@ -493,6 +530,9 @@ nav button:hover {
     padding:20px;
     border-color: rgba(59, 130, 246, 0.15);
     box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
+    animation: fade 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 48%;
 }
 .stat-box p {
     font-weight: 500;
@@ -524,4 +564,34 @@ nav button:hover {
 }
 .stat-box:hover {
     border: 1px solid #3B82F6;
+}
+hr {
+    border: 1px solid #2A2418;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.cursor {
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:15px;
+    height:15px;
+    background: radial-gradient(circle, #3B82F6, white);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+}
+.circle {
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:35px;
+    height:35px;
+    border:4px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
