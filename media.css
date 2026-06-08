@@ -3,8 +3,8 @@
         padding: 300px;
     }
     nav {
-        padding-left:300px;
-        padding-right:300px;
+        
+        width:100vw;
     }
     .stat-box {
         width:30rem;
@@ -58,6 +58,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+    nav {
+    padding-left: 1px;
+    padding-right: 1px;
+    }
 }
 @media (max-width:700px) {
     .project-containers {
@@ -68,8 +72,9 @@
     body {
         width: 100vw;
     }
-    .project {
-        padding:1;
+    .project, .stat {
+        padding:1px;
+        width: 100vw;
     }
     .hero {
         width: 100vw;
@@ -113,5 +118,9 @@
         width:25rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    nav {
+        padding-left: 1px;
+        padding-right: 1px;
     }
 }
