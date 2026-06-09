@@ -76,6 +76,18 @@
         padding:1px;
         width: 100vw;
     }
+    .intro-flex  {
+        padding: 40px;
+    }
+    .intro {
+        margin-left: 40px;
+    }
+    name-flex {
+        gap:10px;
+    }
+    .head-intro {
+        margin-left: 40px;
+    }
     .hero {
         width: 100vw;
     }
@@ -120,7 +132,26 @@
         margin-right: auto;
     }
     nav {
-        padding-left: 1px;
+        padding-left: 40px;
         padding-right: 1px;
+    }
+}
+@media (max-width:500px) {
+    .name {
+        font-size: 50px;
+    }
+    
+    nav {
+        width:100vw;
+    }
+    .nav-link {
+        gap:10px;
+    }
+    nav {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .intro {
+        margin-left: 0px;
     }
 }
